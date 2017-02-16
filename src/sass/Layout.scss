@@ -1,0 +1,22 @@
+$wSides	: .25;
+$wMain 	: 1 - 2* $wSides;
+
+.all {
+	display: inline-block;
+	width: $wSides * 100%;
+	}
+
+#leftMain {
+	@extend .all;
+}
+
+#rightMain {
+	@extend .all;
+}
+
+#midMain {
+	@extend .all;
+	width: $wMain * 100%;
+
+
+}
